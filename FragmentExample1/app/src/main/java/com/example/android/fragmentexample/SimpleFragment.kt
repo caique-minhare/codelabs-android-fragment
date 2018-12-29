@@ -21,4 +21,10 @@ class SimpleFragment : Fragment() {
     private fun setupUi(){
         binding.includedHeader.radioGroup.setOnCheckedChangeListener(OnCheckedChangedListener(binding.includedHeader))
     }
+
+    companion object {
+        fun newInstance() : SimpleFragment{
+            return SimpleFragment()
+        }
+    }
 }
